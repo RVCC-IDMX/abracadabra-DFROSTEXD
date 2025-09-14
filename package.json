@@ -1,0 +1,35 @@
+{
+  "name": "abracadabra-dfrostexd",
+  "version": "1.0.0",
+  "description": "A boring website that becomes awesome through npm magic",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "generate": "cowsay 'Welcome to the most AWESOME website ever!' > generated/welcome.txt && cowsay -f dragon 'I am the guardian of this amazing site!' > generated/dragon.txt && cowsay -f tux 'Development tools make coding awesome!' > generated/tux.txt && node scripts/build-content.js",
+    "serve": "http-server -p 3000 -o",
+    "dev": "npm run generate && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/abracadabra-DFROSTEXD.git"
+  },
+  "keywords": [
+    "npm",
+    "education",
+    "cowsay",
+    "learning",
+    "web-development"
+  ],
+  "author": "Educational Project",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/abracadabra-DFROSTEXD/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/abracadabra-DFROSTEXD#readme",
+  "devDependencies": {
+    "cowsay": "^1.6.0",
+    "http-server": "^14.1.1"
+  }
+}
